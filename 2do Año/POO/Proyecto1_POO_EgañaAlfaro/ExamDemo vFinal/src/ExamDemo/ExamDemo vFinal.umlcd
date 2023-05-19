@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_C1dU0CYaEeuLXJhfBEcZlg">
+  <modelElement href="ExamDemo%20vFinal.uml#_C_QKACYaEeuLXJhfBEcZlg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FAx84CYaEeuLXJhfBEcZlg" source="_FA1AMCYaEeuLXJhfBEcZlg">
+    <modelElement href="ExamDemo%20vFinal.uml#_DBlsUCYaEeuLXJhfBEcZlg"/>
+    <stereotypes xmi:id="_FAx84SYaEeuLXJhfBEcZlg" name="Reference">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBmTYCYaEeuLXJhfBEcZlg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FAx84iYaEeuLXJhfBEcZlg" text=""/>
+    <sourceRole xmi:id="_FAx84yYaEeuLXJhfBEcZlg" aggregationKind="NONE" name="">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBlsUSYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FAx85CYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FAx85SYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FAx85iYaEeuLXJhfBEcZlg" aggregationKind="NONE" name="Array_Preguntas" navigable="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBV0sCYaEeuLXJhfBEcZlg"/>
+      <stereotypes xmi:id="_O0DNwCYaEeuLXJhfBEcZlg" name="Array">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBWbwCYaEeuLXJhfBEcZlg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_O0DNwSYaEeuLXJhfBEcZlg" name="LegacyStyledElement">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBXC0CYaEeuLXJhfBEcZlg"/>
+      </stereotypes>
+      <visibility xmi:id="_FAx85yYaEeuLXJhfBEcZlg" label="-"/>
+      <cardinality xmi:id="_FAx86CYaEeuLXJhfBEcZlg" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_FCB6ECYaEeuLXJhfBEcZlg" sourceAnchor="252.0,0.0" targetAnchor="140.0,139.0" superClass="_FCOuYCYaEeuLXJhfBEcZlg" subClass="_FBl1MCYaEeuLXJhfBEcZlg">
+    <modelElement href="ExamDemo%20vFinal.uml#_DBPuECYaEeuLXJhfBEcZlg"/>
+    <bendpoints xmi:id="_Fd5WsCYaEeuLXJhfBEcZlg" sourceY="-20" targetX="663" targetY="35"/>
+    <bendpoints xmi:id="_Fd59wCYaEeuLXJhfBEcZlg" sourceX="-663" sourceY="-20" targetY="35"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_FDkLICYaEeuLXJhfBEcZlg" sourceAnchor="386.0,0.0" targetAnchor="140.0,139.0" superClass="_FCOuYCYaEeuLXJhfBEcZlg" subClass="_FD138CYaEeuLXJhfBEcZlg">
+    <modelElement href="ExamDemo%20vFinal.uml#_DBQVICYaEeuLXJhfBEcZlg"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FEuowCYaEeuLXJhfBEcZlg" targetItem="_FExFACYaEeuLXJhfBEcZlg" sourceItem="_FEbt0CYaEeuLXJhfBEcZlg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_FFkWQCYaEeuLXJhfBEcZlg" sourceAnchor="263.0,0.0" targetAnchor="140.0,139.0" superClass="_FCOuYCYaEeuLXJhfBEcZlg" subClass="_FGCQUCYaEeuLXJhfBEcZlg">
+    <modelElement href="ExamDemo%20vFinal.uml#_DBQVISYaEeuLXJhfBEcZlg"/>
+    <bendpoints xmi:id="_Fd59wSYaEeuLXJhfBEcZlg" sourceY="-20" targetX="-676" targetY="35"/>
+    <bendpoints xmi:id="_Fd59wiYaEeuLXJhfBEcZlg" sourceX="676" sourceY="-20" targetY="35"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FEbt0CYaEeuLXJhfBEcZlg" sourceConnectionVisual="_FEuowCYaEeuLXJhfBEcZlg" text="Clase para entrada de consola simple.&#xD;&#xA; Una clase diseñada principalmente para la entrada de teclado simple del&#xD;&#xA; Forme un valor de entrada por línea. Si el usuario ingresa un&#xD;&#xA; entrada, es decir, una entrada del tipo incorrecto o una línea en blanco, entonces&#xD;&#xA; Se le pide al usuario que vuelva a ingresar la entrada y se le da una breve&#xD;&#xA; explicación de lo que se requiere. También incluye algunos&#xD;&#xA; métodos para ingresar números, palabras y caracteres individuales, sin&#xD;&#xA; pasando a la siguiente línea." item="_FExFACYaEeuLXJhfBEcZlg">
+    <modelElement href="ExamDemo%20vFinal.uml#_DBjQECYaEeuLXJhfBEcZlg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FA1AMCYaEeuLXJhfBEcZlg" name="Exam" associationsOut="_FAx84CYaEeuLXJhfBEcZlg">
+    <modelElement href="ExamDemo%20vFinal.uml#_C_h20CYaEeuLXJhfBEcZlg"/>
+    <visualProperties xmi:id="_FA1AMSYaEeuLXJhfBEcZlg" position="10.0,1032.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_FA1AMiYaEeuLXJhfBEcZlg" label="+"/>
+    <attributes xmi:id="_FA1AMyYaEeuLXJhfBEcZlg" defaultValue="new Object[10]" name="Array_Preguntas">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBV0sCYaEeuLXJhfBEcZlg"/>
+      <stereotypes xmi:id="_O0IGQCYaEeuLXJhfBEcZlg" name="Array"/>
+      <stereotypes xmi:id="_O0ItUCYaEeuLXJhfBEcZlg" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_O0JUYCYaEeuLXJhfBEcZlg" name="Array"/>
+      <stereotypes xmi:id="_O0JUYSYaEeuLXJhfBEcZlg" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_O0J7cCYaEeuLXJhfBEcZlg" name="Array"/>
+      <stereotypes xmi:id="_O0J7cSYaEeuLXJhfBEcZlg" name="LegacyStyledElement"/>
+      <visibility xmi:id="_FA1ANiYaEeuLXJhfBEcZlg" label="-"/>
+      <cardinality xmi:id="_FA1ANyYaEeuLXJhfBEcZlg" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_FA1AOCYaEeuLXJhfBEcZlg" name="Object">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBRjQSYaEeuLXJhfBEcZlg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FA1AOSYaEeuLXJhfBEcZlg" defaultValue="0" name="PuntajeUsuario">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBXC0SYaEeuLXJhfBEcZlg"/>
+      <stereotypes xmi:id="_FA1AOiYaEeuLXJhfBEcZlg" name="LegacyStyledElement">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBXp4CYaEeuLXJhfBEcZlg"/>
+      </stereotypes>
+      <visibility xmi:id="_FA1AOyYaEeuLXJhfBEcZlg" label="-"/>
+      <cardinality xmi:id="_FA1APCYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <type xmi:id="_FA1APSYaEeuLXJhfBEcZlg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FA1APiYaEeuLXJhfBEcZlg" defaultValue="0" name="PuntajeTotal">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBXp4SYaEeuLXJhfBEcZlg"/>
+      <stereotypes xmi:id="_FA1APyYaEeuLXJhfBEcZlg" name="LegacyStyledElement">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBY4ACYaEeuLXJhfBEcZlg"/>
+      </stereotypes>
+      <visibility xmi:id="_FA1AQCYaEeuLXJhfBEcZlg" label="-"/>
+      <cardinality xmi:id="_FA1AQSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <type xmi:id="_FA1AQiYaEeuLXJhfBEcZlg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FA1AQyYaEeuLXJhfBEcZlg" defaultValue="0" name="n_Pregunta">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBY4ASYaEeuLXJhfBEcZlg"/>
+      <stereotypes xmi:id="_FA1ARCYaEeuLXJhfBEcZlg" name="LegacyStyledElement">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBZfECYaEeuLXJhfBEcZlg"/>
+      </stereotypes>
+      <visibility xmi:id="_FA1ARSYaEeuLXJhfBEcZlg" label="-"/>
+      <cardinality xmi:id="_FA1ARiYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <type xmi:id="_FA1ARyYaEeuLXJhfBEcZlg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FA1ASCYaEeuLXJhfBEcZlg" name="DarExam">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_jE8CYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FA1ASSYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FA1ASiYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FA1ASyYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_kTECYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FA1ATCYaEeuLXJhfBEcZlg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FA1ATSYaEeuLXJhfBEcZlg" name="agregaPregunta">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBSxYCYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FA1ATiYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FA1ATyYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_FA1AUCYaEeuLXJhfBEcZlg" name="pregunta">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBSxYSYaEeuLXJhfBEcZlg"/>
+        <cardinality xmi:id="_FA1AUSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+        <type xmi:id="_FA1AUiYaEeuLXJhfBEcZlg" name="Object">
+          <modelElement href="ExamDemo%20vFinal.uml#_DBRjQSYaEeuLXJhfBEcZlg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FBKXYCYaEeuLXJhfBEcZlg" name="ExamDemo">
+    <modelElement href="ExamDemo%20vFinal.uml#_C_k6ICYaEeuLXJhfBEcZlg"/>
+    <visualProperties xmi:id="_FBKXYSYaEeuLXJhfBEcZlg" position="458.0,1028.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_FBKXYiYaEeuLXJhfBEcZlg" label="+"/>
+    <operations xmi:id="_FBKXYyYaEeuLXJhfBEcZlg" name="main" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_mvUCYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FBKXZCYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FBKXZSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_FBKXZiYaEeuLXJhfBEcZlg" name="args">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_mvUSYaEeuLXJhfBEcZlg"/>
+        <cardinality xmi:id="_FBKXZyYaEeuLXJhfBEcZlg" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_FBKXaCYaEeuLXJhfBEcZlg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FBl1MCYaEeuLXJhfBEcZlg" name="Resp_Cortas" generalizations="_FCB6ECYaEeuLXJhfBEcZlg">
+    <modelElement href="ExamDemo%20vFinal.uml#_C_qZsCYaEeuLXJhfBEcZlg"/>
+    <visualProperties xmi:id="_FBl1MSYaEeuLXJhfBEcZlg" position="1368.0,781.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_FBl1MiYaEeuLXJhfBEcZlg" label="+"/>
+    <attributes xmi:id="_FBl1MyYaEeuLXJhfBEcZlg" name="resp_correcto">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBaGICYaEeuLXJhfBEcZlg"/>
+      <stereotypes xmi:id="_FBl1NCYaEeuLXJhfBEcZlg" name="LegacyStyledElement">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBaGISYaEeuLXJhfBEcZlg"/>
+      </stereotypes>
+      <visibility xmi:id="_FBl1NSYaEeuLXJhfBEcZlg" label="-"/>
+      <cardinality xmi:id="_FBl1NiYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <type xmi:id="_FBl1NyYaEeuLXJhfBEcZlg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FBl1OCYaEeuLXJhfBEcZlg" name="Resp_Cortas">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_rAwCYaEeuLXJhfBEcZlg"/>
+      <keywords xmi:id="_FBl1OSYaEeuLXJhfBEcZlg" keyword="create"/>
+      <visibility xmi:id="_FBl1OiYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FBl1OyYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FBl1PCYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_rn0iYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FBl1PSYaEeuLXJhfBEcZlg" name="Resp_Cortas">
+          <modelElement href="ExamDemo%20vFinal.uml#_C_qZsCYaEeuLXJhfBEcZlg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_FBl1PiYaEeuLXJhfBEcZlg" name="text">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_rAwSYaEeuLXJhfBEcZlg"/>
+        <cardinality xmi:id="_FBl1PyYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+        <type xmi:id="_FBl1QCYaEeuLXJhfBEcZlg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FBl1QSYaEeuLXJhfBEcZlg" name="correcto">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_rAwiYaEeuLXJhfBEcZlg"/>
+        <cardinality xmi:id="_FBl1QiYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+        <type xmi:id="_FBl1QyYaEeuLXJhfBEcZlg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FBl1RCYaEeuLXJhfBEcZlg" name="peso">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_rAwyYaEeuLXJhfBEcZlg"/>
+        <cardinality xmi:id="_FBl1RSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+        <type xmi:id="_FBl1RiYaEeuLXJhfBEcZlg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FBl1RyYaEeuLXJhfBEcZlg" name="buscar">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_rn0yYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FBl1SCYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FBl1SSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FBl1SiYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_rn1CYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FBl1SyYaEeuLXJhfBEcZlg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FCOuYCYaEeuLXJhfBEcZlg" name="Pregunta" abstractClass="true" subclassedBy="_FCB6ECYaEeuLXJhfBEcZlg _FDkLICYaEeuLXJhfBEcZlg _FFkWQCYaEeuLXJhfBEcZlg">
+    <modelElement href="ExamDemo%20vFinal.uml#_C_n9cCYaEeuLXJhfBEcZlg"/>
+    <visualProperties xmi:id="_FCOuYSYaEeuLXJhfBEcZlg" position="817.0,587.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_FCOuYiYaEeuLXJhfBEcZlg" label="+"/>
+    <attributes xmi:id="_FCOuYyYaEeuLXJhfBEcZlg" name="text">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBZfESYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FCOuZCYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FCOuZSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <type xmi:id="_FCOuZiYaEeuLXJhfBEcZlg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FCOuZyYaEeuLXJhfBEcZlg" name="peso">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBZfEiYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FCOuaCYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FCOuaSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <type xmi:id="_FCOuaiYaEeuLXJhfBEcZlg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FCOuayYaEeuLXJhfBEcZlg" name="Pregunta">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_pLkCYaEeuLXJhfBEcZlg"/>
+      <keywords xmi:id="_FCOubCYaEeuLXJhfBEcZlg" keyword="create"/>
+      <visibility xmi:id="_FCOubSYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FCOubiYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FCOubyYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_pyoiYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FCOucCYaEeuLXJhfBEcZlg" name="Pregunta">
+          <modelElement href="ExamDemo%20vFinal.uml#_C_n9cCYaEeuLXJhfBEcZlg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_FCOucSYaEeuLXJhfBEcZlg" name="text">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_pLkSYaEeuLXJhfBEcZlg"/>
+        <cardinality xmi:id="_FCOuciYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+        <type xmi:id="_FCOucyYaEeuLXJhfBEcZlg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FCOudCYaEeuLXJhfBEcZlg" abstractOperation="true" name="buscar">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_pyoyYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FCOudSYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FCOudiYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FCOudyYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_pypCYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FCOueCYaEeuLXJhfBEcZlg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FD138CYaEeuLXJhfBEcZlg" name="Selec_Mul_Pregunta" generalizations="_FDkLICYaEeuLXJhfBEcZlg">
+    <modelElement href="ExamDemo%20vFinal.uml#_C_0KsCYaEeuLXJhfBEcZlg"/>
+    <visualProperties xmi:id="_FD138SYaEeuLXJhfBEcZlg" position="571.0,797.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_FD138iYaEeuLXJhfBEcZlg" label="+"/>
+    <attributes xmi:id="_FD138yYaEeuLXJhfBEcZlg" name="array_elecciones">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBatMCYaEeuLXJhfBEcZlg"/>
+      <stereotypes xmi:id="_FD139CYaEeuLXJhfBEcZlg" name="Array">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBatMiYaEeuLXJhfBEcZlg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FD139SYaEeuLXJhfBEcZlg" name="LegacyStyledElement">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBatMyYaEeuLXJhfBEcZlg"/>
+      </stereotypes>
+      <visibility xmi:id="_FD139iYaEeuLXJhfBEcZlg" label="-"/>
+      <cardinality xmi:id="_FD139yYaEeuLXJhfBEcZlg" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_FD13-CYaEeuLXJhfBEcZlg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FD13-SYaEeuLXJhfBEcZlg" name="correcta">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBbUQCYaEeuLXJhfBEcZlg"/>
+      <stereotypes xmi:id="_FD13-iYaEeuLXJhfBEcZlg" name="LegacyStyledElement">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBbUQSYaEeuLXJhfBEcZlg"/>
+      </stereotypes>
+      <visibility xmi:id="_FD13-yYaEeuLXJhfBEcZlg" label="-"/>
+      <cardinality xmi:id="_FD13_CYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <type xmi:id="_FD13_SYaEeuLXJhfBEcZlg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FD13_iYaEeuLXJhfBEcZlg" defaultValue="{&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;}" name="alternativas">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBbUQiYaEeuLXJhfBEcZlg"/>
+      <stereotypes xmi:id="_FD13_yYaEeuLXJhfBEcZlg" name="Array">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBbURCYaEeuLXJhfBEcZlg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FD14ACYaEeuLXJhfBEcZlg" name="LegacyStyledElement">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBb7USYaEeuLXJhfBEcZlg"/>
+      </stereotypes>
+      <visibility xmi:id="_FD14ASYaEeuLXJhfBEcZlg" label="~"/>
+      <cardinality xmi:id="_FD14AiYaEeuLXJhfBEcZlg" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_FD14AyYaEeuLXJhfBEcZlg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FD14BCYaEeuLXJhfBEcZlg" name="Selec_Mul_Pregunta">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_0xwCYaEeuLXJhfBEcZlg"/>
+      <keywords xmi:id="_FD14BSYaEeuLXJhfBEcZlg" keyword="create"/>
+      <visibility xmi:id="_FD14BiYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FD14ByYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FD14CCYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_1Y1iYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FD14CSYaEeuLXJhfBEcZlg" name="Selec_Mul_Pregunta">
+          <modelElement href="ExamDemo%20vFinal.uml#_C_0KsCYaEeuLXJhfBEcZlg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_FD14CiYaEeuLXJhfBEcZlg" name="text">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_1Y0CYaEeuLXJhfBEcZlg"/>
+        <cardinality xmi:id="_FD14CyYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+        <type xmi:id="_FD14DCYaEeuLXJhfBEcZlg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FD14DSYaEeuLXJhfBEcZlg" name="array">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_1Y0SYaEeuLXJhfBEcZlg"/>
+        <cardinality xmi:id="_FD14DiYaEeuLXJhfBEcZlg" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_FD14DyYaEeuLXJhfBEcZlg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FD14ECYaEeuLXJhfBEcZlg" name="respuesta_correcta">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_1Y0iYaEeuLXJhfBEcZlg"/>
+        <cardinality xmi:id="_FD14ESYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+        <type xmi:id="_FD14EiYaEeuLXJhfBEcZlg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FD14EyYaEeuLXJhfBEcZlg" name="peso">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_1Y0yYaEeuLXJhfBEcZlg"/>
+        <cardinality xmi:id="_FD14FCYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+        <type xmi:id="_FD14FSYaEeuLXJhfBEcZlg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FD14FiYaEeuLXJhfBEcZlg" name="buscar">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_1_4CYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FD14FyYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FD14GCYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FD14GSYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_1_4SYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FD14GiYaEeuLXJhfBEcZlg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FExFACYaEeuLXJhfBEcZlg" comments="_FEbt0CYaEeuLXJhfBEcZlg" targetConnectionVisual="_FEuowCYaEeuLXJhfBEcZlg" name="SavitchIn">
+    <modelElement href="ExamDemo%20vFinal.uml#_C_sO4CYaEeuLXJhfBEcZlg"/>
+    <visualProperties xmi:id="_FExFASYaEeuLXJhfBEcZlg" position="19.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_FExFAiYaEeuLXJhfBEcZlg" label="+"/>
+    <operations xmi:id="_FExFAyYaEeuLXJhfBEcZlg" name="readLine" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_s18CYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFBCYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFBSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFBiYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_s18SYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFByYaEeuLXJhfBEcZlg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFCCYaEeuLXJhfBEcZlg" name="readLineWord" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_tdACYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFCSYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFCiYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFCyYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_tdASYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFDCYaEeuLXJhfBEcZlg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFDSYaEeuLXJhfBEcZlg" name="readLineInt" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_uEECYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFDiYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFDyYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFECYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_uEESYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFESYaEeuLXJhfBEcZlg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFEiYaEeuLXJhfBEcZlg" name="readLineLong" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_uEEiYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFEyYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFFCYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFFSYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_uEEyYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFFiYaEeuLXJhfBEcZlg" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFFyYaEeuLXJhfBEcZlg" name="readLineDouble" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_uEFCYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFGCYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFGSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFGiYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_urICYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFGyYaEeuLXJhfBEcZlg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFHCYaEeuLXJhfBEcZlg" name="readLineFloat" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_urISYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFHSYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFHiYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFHyYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_urIiYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFICYaEeuLXJhfBEcZlg" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFISYaEeuLXJhfBEcZlg" name="readLineNonwhiteChar" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_urIyYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFIiYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFIyYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFJCYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_urJCYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFJSYaEeuLXJhfBEcZlg" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFJiYaEeuLXJhfBEcZlg" name="readLineBoolean" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_urJSYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFJyYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFKCYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFKSYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_vSMCYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFKiYaEeuLXJhfBEcZlg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFKyYaEeuLXJhfBEcZlg" name="readChar" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_vSMSYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFLCYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFLSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFLiYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_vSMiYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFLyYaEeuLXJhfBEcZlg" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFMCYaEeuLXJhfBEcZlg" name="readNonwhiteChar" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_vSMyYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFMSYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFMiYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFMyYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_vSNCYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFNCYaEeuLXJhfBEcZlg" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFNSYaEeuLXJhfBEcZlg" name="readInt" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_vSNSYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFNiYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFNyYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFOCYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_v5QCYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFOSYaEeuLXJhfBEcZlg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFOiYaEeuLXJhfBEcZlg" name="readLong" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_v5QSYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFOyYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFPCYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFPSYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_v5QiYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFPiYaEeuLXJhfBEcZlg" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFPyYaEeuLXJhfBEcZlg" name="readDouble" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_wgUCYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFQCYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFQSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFQiYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_wgUSYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFQyYaEeuLXJhfBEcZlg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFRCYaEeuLXJhfBEcZlg" name="readFloat" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_wgUiYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFRSYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFRiYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFRyYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_wgUyYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFSCYaEeuLXJhfBEcZlg" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFSSYaEeuLXJhfBEcZlg" name="readWord" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_xHYCYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFSiYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFSyYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFTCYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_xHYSYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFTSYaEeuLXJhfBEcZlg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFTiYaEeuLXJhfBEcZlg" name="readLineByte" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_xucCYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFTyYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFUCYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFUSYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_xucSYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFUiYaEeuLXJhfBEcZlg" name="byte">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFUyYaEeuLXJhfBEcZlg" name="readLineShort" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_xuciYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFVCYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFVSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFViYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_yVgCYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFVyYaEeuLXJhfBEcZlg" name="short">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFWCYaEeuLXJhfBEcZlg" name="readByte" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_yVgSYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFWSYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFWiYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFWyYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_yVgiYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFXCYaEeuLXJhfBEcZlg" name="byte">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFXSYaEeuLXJhfBEcZlg" name="readShort" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_y8kCYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFXiYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFXyYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFYCYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_y8kSYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFYSYaEeuLXJhfBEcZlg" name="short">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FExFYiYaEeuLXJhfBEcZlg" name="read" staticOperation="true">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_y8kiYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FExFYyYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FExFZCYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FExFZSYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_y8kyYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FExFZiYaEeuLXJhfBEcZlg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FGCQUCYaEeuLXJhfBEcZlg" name="TF_Pregunta" generalizations="_FFkWQCYaEeuLXJhfBEcZlg">
+    <modelElement href="ExamDemo%20vFinal.uml#_C_2m8CYaEeuLXJhfBEcZlg"/>
+    <visualProperties xmi:id="_FGCQUSYaEeuLXJhfBEcZlg" position="18.0,781.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_FGCQUiYaEeuLXJhfBEcZlg" label="+"/>
+    <attributes xmi:id="_FGCQUyYaEeuLXJhfBEcZlg" name="Legal">
+      <modelElement href="ExamDemo%20vFinal.uml#_DBb7UiYaEeuLXJhfBEcZlg"/>
+      <stereotypes xmi:id="_FGCQVCYaEeuLXJhfBEcZlg" name="LegacyStyledElement">
+        <modelElement href="ExamDemo%20vFinal.uml#_DBciYCYaEeuLXJhfBEcZlg"/>
+      </stereotypes>
+      <visibility xmi:id="_FGCQVSYaEeuLXJhfBEcZlg" label="-"/>
+      <cardinality xmi:id="_FGCQViYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <type xmi:id="_FGCQVyYaEeuLXJhfBEcZlg" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FGCQWCYaEeuLXJhfBEcZlg" name="TF_Pregunta">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_3OACYaEeuLXJhfBEcZlg"/>
+      <keywords xmi:id="_FGCQWSYaEeuLXJhfBEcZlg" keyword="create"/>
+      <visibility xmi:id="_FGCQWiYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FGCQWyYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FGCQXCYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_31FCYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FGCQXSYaEeuLXJhfBEcZlg" name="TF_Pregunta">
+          <modelElement href="ExamDemo%20vFinal.uml#_C_2m8CYaEeuLXJhfBEcZlg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_FGCQXiYaEeuLXJhfBEcZlg" name="text">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_3OASYaEeuLXJhfBEcZlg"/>
+        <cardinality xmi:id="_FGCQXyYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+        <type xmi:id="_FGCQYCYaEeuLXJhfBEcZlg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FGCQYSYaEeuLXJhfBEcZlg" name="respuesta">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_31ECYaEeuLXJhfBEcZlg"/>
+        <cardinality xmi:id="_FGCQYiYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+        <type xmi:id="_FGCQYyYaEeuLXJhfBEcZlg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FGCQZCYaEeuLXJhfBEcZlg" name="peso">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_31ESYaEeuLXJhfBEcZlg"/>
+        <cardinality xmi:id="_FGCQZSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+        <type xmi:id="_FGCQZiYaEeuLXJhfBEcZlg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FGCQZyYaEeuLXJhfBEcZlg" name="buscar">
+      <modelElement href="ExamDemo%20vFinal.uml#_C_31FSYaEeuLXJhfBEcZlg"/>
+      <visibility xmi:id="_FGCQaCYaEeuLXJhfBEcZlg" label="+"/>
+      <cardinality xmi:id="_FGCQaSYaEeuLXJhfBEcZlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_FGCQaiYaEeuLXJhfBEcZlg">
+        <modelElement href="ExamDemo%20vFinal.uml#_C_31FiYaEeuLXJhfBEcZlg"/>
+        <type xmi:id="_FGCQayYaEeuLXJhfBEcZlg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

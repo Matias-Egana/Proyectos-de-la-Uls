@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_CzeX0CYaEeuLXJhfBEcZlg" name="ExamDemo_vFinal">
+    <eAnnotations xmi:id="_C5LXMCYaEeuLXJhfBEcZlg" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_C5L-QCYaEeuLXJhfBEcZlg" source="codegen">
+        <details xmi:id="_C5L-QSYaEeuLXJhfBEcZlg" key="codegenDirectory" value="/ExamDemo vFinal/src"/>
+        <details xmi:id="_DHxz4CYaEeuLXJhfBEcZlg" key="AssociatedSourceCode" value="/ExamDemo vFinal/src/ExamDemo/Exam.java;1018475670/1;/ExamDemo vFinal/src/ExamDemo/ExamDemo.java;1069854882/1;/ExamDemo vFinal/src/ExamDemo/Pregunta.java;1089499198/1;/ExamDemo vFinal/src/ExamDemo/Resp_Cortas.java;2788577432/1;/ExamDemo vFinal/src/ExamDemo/SavitchIn.java;652796949/1;/ExamDemo vFinal/src/ExamDemo/Selec_Mul_Pregunta.java;386019199/1;/ExamDemo vFinal/src/ExamDemo/TF_Pregunta.java;87151689/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_C_OU0CYaEeuLXJhfBEcZlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_C_OU0SYaEeuLXJhfBEcZlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_C_OU0iYaEeuLXJhfBEcZlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_C_OU0yYaEeuLXJhfBEcZlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_C_OU1CYaEeuLXJhfBEcZlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_C_O74CYaEeuLXJhfBEcZlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_C_O74SYaEeuLXJhfBEcZlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_C_O74iYaEeuLXJhfBEcZlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_C_O74yYaEeuLXJhfBEcZlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_C_QKACYaEeuLXJhfBEcZlg" name="ExamDemo">
+      <packagedElement xmi:type="uml:Class" xmi:id="_C_h20CYaEeuLXJhfBEcZlg" name="Exam">
+        <ownedAttribute xmi:id="_DBV0sCYaEeuLXJhfBEcZlg" name="Array_Preguntas" visibility="private" type="_DBRjQSYaEeuLXJhfBEcZlg" association="_DBlsUCYaEeuLXJhfBEcZlg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBV0sSYaEeuLXJhfBEcZlg" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_DBWbwSYaEeuLXJhfBEcZlg" value="new Object[10]"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_DBXC0SYaEeuLXJhfBEcZlg" name="PuntajeUsuario" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_DBXC0iYaEeuLXJhfBEcZlg" value="0"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_DBXp4SYaEeuLXJhfBEcZlg" name="PuntajeTotal" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_DBXp4iYaEeuLXJhfBEcZlg" value="0"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_DBY4ASYaEeuLXJhfBEcZlg" name="n_Pregunta" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_DBY4AiYaEeuLXJhfBEcZlg" value="0"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBciYSYaEeuLXJhfBEcZlg" name="agregaPregunta" specification="_DBSxYCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBciYiYaEeuLXJhfBEcZlg" name="pregunta" type="_DBRjQSYaEeuLXJhfBEcZlg"/>
+          <language>java</language>
+          <body>if(n_Pregunta&lt;10) {&#xD;
+			Array_Preguntas[n_Pregunta] = pregunta;&#xD;
+			n_Pregunta++;&#xD;
+		}&#xD;
+		else {&#xD;
+			System.out.println(&quot;Error limite excedido&quot;);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBdwgCYaEeuLXJhfBEcZlg" name="DarExam" specification="_C_jE8CYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBdwgSYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>System.out.println(&quot;**************Examen******************&quot;);&#xD;
+		boolean correccion;&#xD;
+		int Resultado = 0;&#xD;
+		int i = 0;&#xD;
+			for(i=0;i&lt;n_Pregunta;i++) {&#xD;
+				if(Array_Preguntas[i].getClass() == Resp_Cortas.class) {&#xD;
+					Resp_Cortas respuestacorta = (Resp_Cortas) Array_Preguntas[i] ;&#xD;
+			//		System.out.println(&quot;&quot;+respuestacorta.getText()+&quot;(respuestacorta)&quot;);&#xD;
+					correccion = respuestacorta.buscar();&#xD;
+					if(correccion) {&#xD;
+						PuntajeUsuario = PuntajeUsuario + respuestacorta.getPeso();&#xD;
+					}&#xD;
+					PuntajeTotal = PuntajeTotal + respuestacorta.getPeso();&#xD;
+				}&#xD;
+				if(Array_Preguntas[i].getClass() == TF_Pregunta.class) {&#xD;
+					TF_Pregunta tfpregunta = (TF_Pregunta) Array_Preguntas[i] ;	//creo objeto y la incializo en el arreglo;&#xD;
+				//	System.out.println(&quot;&quot;+tfpregunta.getText()+&quot;(tfpregunta)&quot;);&#xD;
+					correccion = tfpregunta.buscar();&#xD;
+					if(correccion) {&#xD;
+						PuntajeUsuario = PuntajeUsuario + tfpregunta.getPeso();&#xD;
+					}&#xD;
+					PuntajeTotal = PuntajeTotal +tfpregunta.getPeso();&#xD;
+				}&#xD;
+				if(Array_Preguntas[i].getClass() == Selec_Mul_Pregunta.class) {&#xD;
+					Selec_Mul_Pregunta selecmulpregunta = (Selec_Mul_Pregunta) Array_Preguntas[i] ;&#xD;
+				//	System.out.println(&quot;&quot;+selecmulpregunta.getText()+&quot;(selecmulpregunta)&quot;);&#xD;
+					correccion = selecmulpregunta.buscar();&#xD;
+					if(correccion) {&#xD;
+						PuntajeUsuario = PuntajeUsuario + selecmulpregunta.getPeso();&#xD;
+					}&#xD;
+					PuntajeTotal = PuntajeTotal +selecmulpregunta.getPeso();&#xD;
+				}&#xD;
+			}&#xD;
+			double Porcentaje = (PuntajeUsuario*100)/PuntajeTotal;&#xD;
+			Resultado = (int)Porcentaje;&#xD;
+			System.out.println(&quot;El Puntaje Obtenido es: &quot; +PuntajeUsuario);&#xD;
+			System.out.println(&quot;El Puntaje Total es: &quot; +PuntajeTotal);&#xD;
+			return Resultado;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_C_jE8CYaEeuLXJhfBEcZlg" name="DarExam" method="_DBdwgCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_kTECYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_DBSxYCYaEeuLXJhfBEcZlg" name="agregaPregunta" method="_DBciYSYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBSxYSYaEeuLXJhfBEcZlg" name="pregunta" type="_DBRjQSYaEeuLXJhfBEcZlg"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_C_k6ICYaEeuLXJhfBEcZlg" name="ExamDemo">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBdwgiYaEeuLXJhfBEcZlg" name="main" specification="_C_mvUCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBdwgyYaEeuLXJhfBEcZlg" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBdwhCYaEeuLXJhfBEcZlg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Exam miExam = new Exam();&#xD;
+	    miExam.agregaPregunta(new TF_Pregunta(&quot;¿La capital de Chile es Santiago?&quot;, true, 1));&#xD;
+	    String santiagoElec[] = {&quot;a. Santiago&quot;, &quot;b. Valparaiso&quot;, &quot;c. Copiapo&quot;, &quot;d. Magallanes&quot;, &quot;e. Temuco&quot;};&#xD;
+	    miExam.agregaPregunta(new Selec_Mul_Pregunta(&quot;¿Cuál es la capital de Region Metropolitana?&quot;, santiagoElec, 0, 1));&#xD;
+	    miExam.agregaPregunta(new Resp_Cortas(&quot;¿Cuál es la capital de IV Region?&quot;, &quot;Coquimbo&quot;, 1));&#xD;
+	    miExam.agregaPregunta(new TF_Pregunta(&quot;¿La capital de Estados Unidos es New York?&quot;, false, 1));&#xD;
+	    miExam.agregaPregunta(new Resp_Cortas(&quot;¿Cuánto es 64+4?&quot;, &quot;68&quot;, 1));&#xD;
+	    miExam.agregaPregunta(new Resp_Cortas(&quot;¿Cuál es la capital de Alemania?&quot;, &quot;Berlin&quot;, 2));&#xD;
+	    miExam.agregaPregunta(new TF_Pregunta(&quot;¿La capital de Rusia es Stalingrado?&quot;, false, 1));&#xD;
+	    String PElec[] = {&quot;a. Brasilia&quot;, &quot;b. Rio de Janeiro&quot;, &quot;c. Sao Paulo&quot;, &quot;d. Lima&quot;};&#xD;
+	    miExam.agregaPregunta(new Selec_Mul_Pregunta(&quot;¿Cuál es la capital de Brasil?&quot;, PElec, 0,1));&#xD;
+ &#xD;
+		int puntaje = miExam.DarExam();&#xD;
+	    System.out.println(&quot;El Porcentaje de respuestas correctas es: &quot; + puntaje + &quot;%&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_C_mvUCYaEeuLXJhfBEcZlg" name="main" isStatic="true" method="_DBdwgiYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_mvUSYaEeuLXJhfBEcZlg" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C_nWYCYaEeuLXJhfBEcZlg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_C_n9cCYaEeuLXJhfBEcZlg" name="Pregunta" isAbstract="true">
+        <ownedAttribute xmi:id="_DBZfESYaEeuLXJhfBEcZlg" name="text" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_DBZfEiYaEeuLXJhfBEcZlg" name="peso">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBeXkCYaEeuLXJhfBEcZlg" name="Pregunta" specification="_C_pLkCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBeXkSYaEeuLXJhfBEcZlg" name="text">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_DBeXkiYaEeuLXJhfBEcZlg" type="_C_n9cCYaEeuLXJhfBEcZlg" direction="return"/>
+          <language>java</language>
+          <body>this.text = text;&#xD;
+		</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_C_pLkCYaEeuLXJhfBEcZlg" name="Pregunta" method="_DBeXkCYaEeuLXJhfBEcZlg">
+          <eAnnotations xmi:id="_C_pyoCYaEeuLXJhfBEcZlg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_C_pyoSYaEeuLXJhfBEcZlg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_C_pLkSYaEeuLXJhfBEcZlg" name="text">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_C_pyoiYaEeuLXJhfBEcZlg" type="_C_n9cCYaEeuLXJhfBEcZlg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_pyoyYaEeuLXJhfBEcZlg" name="buscar" isAbstract="true">
+          <ownedParameter xmi:id="_C_pypCYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_C_qZsCYaEeuLXJhfBEcZlg" name="Resp_Cortas">
+        <generalization xmi:id="_DBPuECYaEeuLXJhfBEcZlg" general="_C_n9cCYaEeuLXJhfBEcZlg"/>
+        <ownedAttribute xmi:id="_DBaGICYaEeuLXJhfBEcZlg" name="resp_correcto" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBeXkyYaEeuLXJhfBEcZlg" name="Resp_Cortas" specification="_C_rAwCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBeXlCYaEeuLXJhfBEcZlg" name="text">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_DBeXlSYaEeuLXJhfBEcZlg" name="correcto">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_DBeXliYaEeuLXJhfBEcZlg" name="peso">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_DBeXlyYaEeuLXJhfBEcZlg" type="_C_qZsCYaEeuLXJhfBEcZlg" direction="return"/>
+          <language>java</language>
+          <body>super(text);&#xD;
+		this.resp_correcto = correcto;&#xD;
+		super.setPeso(peso);	&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBeXmCYaEeuLXJhfBEcZlg" name="buscar" specification="_C_rn0yYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBeXmSYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>System.out.println(getText() + &quot; Ingrese la respuesta que crea usted correcta &quot;);&#xD;
+		String resp_usuario = SavitchIn.readLine().toLowerCase();	&#xD;
+		if(resp_correcto.equalsIgnoreCase(resp_usuario)) {&#xD;
+			System.out.println(&quot;La Respuesta es Correcta!&quot;);&#xD;
+			return true;&#xD;
+		}&#xD;
+		else {&#xD;
+			System.out.println(&quot;Respuesta Incorrecta!&quot;);&#xD;
+			return false;&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_C_rAwCYaEeuLXJhfBEcZlg" name="Resp_Cortas" method="_DBeXkyYaEeuLXJhfBEcZlg">
+          <eAnnotations xmi:id="_C_rn0CYaEeuLXJhfBEcZlg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_C_rn0SYaEeuLXJhfBEcZlg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_C_rAwSYaEeuLXJhfBEcZlg" name="text">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_C_rAwiYaEeuLXJhfBEcZlg" name="correcto">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_C_rAwyYaEeuLXJhfBEcZlg" name="peso">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_C_rn0iYaEeuLXJhfBEcZlg" type="_C_qZsCYaEeuLXJhfBEcZlg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_rn0yYaEeuLXJhfBEcZlg" name="buscar" method="_DBeXmCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_rn1CYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_C_sO4CYaEeuLXJhfBEcZlg" name="SavitchIn">
+        <ownedComment xmi:id="_DBjQECYaEeuLXJhfBEcZlg">
+          <body>Clase para entrada de consola simple.&#xD;
+ Una clase diseñada principalmente para la entrada de teclado simple del&#xD;
+ Forme un valor de entrada por línea. Si el usuario ingresa un&#xD;
+ entrada, es decir, una entrada del tipo incorrecto o una línea en blanco, entonces&#xD;
+ Se le pide al usuario que vuelva a ingresar la entrada y se le da una breve&#xD;
+ explicación de lo que se requiere. También incluye algunos&#xD;
+ métodos para ingresar números, palabras y caracteres individuales, sin&#xD;
+ pasando a la siguiente línea.</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBeXmiYaEeuLXJhfBEcZlg" name="readLine" specification="_C_s18CYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBeXmyYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>char nextChar;&#xD;
+     String result = &quot;&quot;;&#xD;
+     boolean done = false;&#xD;
+&#xD;
+     while (!done)&#xD;
+     {&#xD;
+         nextChar = readChar( );&#xD;
+         if (nextChar == '\n')&#xD;
+            done = true;&#xD;
+         else if (nextChar == '\r')&#xD;
+         {&#xD;
+             //Do nothing.&#xD;
+             //Next loop iteration will detect '\n'.&#xD;
+         }&#xD;
+         else&#xD;
+            result = result + nextChar;&#xD;
+     }&#xD;
+&#xD;
+     return result;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBeXnCYaEeuLXJhfBEcZlg" name="readLineWord" specification="_C_tdACYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBeXnSYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String inputString = null,&#xD;
+            result = null;&#xD;
+     boolean done = false;&#xD;
+&#xD;
+     while(!done)&#xD;
+     {&#xD;
+         inputString = readLine( );&#xD;
+         StringTokenizer wordSource =&#xD;
+                             new StringTokenizer(inputString);&#xD;
+         if (wordSource.hasMoreTokens( ))&#xD;
+         {&#xD;
+             result = wordSource.nextToken( );&#xD;
+             done = true;&#xD;
+         }&#xD;
+         else&#xD;
+         {&#xD;
+             System.out.println(&#xD;
+                  &quot;Your input is not correct. Your input must&quot;);&#xD;
+             System.out.println(&#xD;
+              &quot;contain at least one nonwhitespace character.&quot;);&#xD;
+             System.out.println(&#xD;
+                              &quot;Please try again. Enter input:&quot;);&#xD;
+        }&#xD;
+    }&#xD;
+&#xD;
+    return result;&#xD;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBe-oCYaEeuLXJhfBEcZlg" name="readLineInt" specification="_C_uEECYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBe-oSYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String inputString = null;&#xD;
+     int number = -9999;//To keep the compiler happy.&#xD;
+                        //Designed to look like a garbage value.&#xD;
+     boolean done = false;&#xD;
+&#xD;
+     while (! done)&#xD;
+     {&#xD;
+         try&#xD;
+         {&#xD;
+             inputString = readLine( );&#xD;
+             inputString = inputString.trim( );&#xD;
+             number = Integer.parseInt(inputString);&#xD;
+             done = true;&#xD;
+         }&#xD;
+         catch (NumberFormatException e)&#xD;
+         {&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input number is not correct.&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input number must be&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;a whole number written as an&quot;);&#xD;
+             System.out.println(&#xD;
+                       &quot;ordinary numeral, such as 42&quot;);&#xD;
+             System.out.println(&quot;Minus signs are OK,&quot;&#xD;
+                       + &quot;but do not use a plus sign.&quot;);&#xD;
+             System.out.println(&quot;Please try again.&quot;);&#xD;
+             System.out.println(&quot;Enter a whole number:&quot;);&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     return number;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBe-oiYaEeuLXJhfBEcZlg" name="readLineLong" specification="_C_uEEiYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBe-oyYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String inputString = null;&#xD;
+     long number = -9999;//To keep the compiler happy.&#xD;
+                   //Designed to look like a garbage value.&#xD;
+     boolean done = false;&#xD;
+&#xD;
+     while (! done)&#xD;
+     {&#xD;
+         try&#xD;
+         {&#xD;
+             inputString = readLine( );&#xD;
+             inputString = inputString.trim( );&#xD;
+             number = Long.parseLong(inputString);&#xD;
+             done = true;&#xD;
+         }&#xD;
+         catch (NumberFormatException e)&#xD;
+         {&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input number is not correct.&quot;);&#xD;
+             System.out.println(&#xD;
+                          &quot;Your input number must be&quot;);&#xD;
+             System.out.println(&#xD;
+                          &quot;a whole number written as an&quot;);&#xD;
+             System.out.println(&#xD;
+                           &quot;ordinary numeral, such as 42&quot;);&#xD;
+             System.out.println(&quot;Minus signs are OK,&quot;&#xD;
+                            + &quot;but do not use a plus sign.&quot;);&#xD;
+             System.out.println(&quot;Please try again.&quot;);&#xD;
+             System.out.println(&quot;Enter a whole number:&quot;);&#xD;
+         }&#xD;
+    }&#xD;
+&#xD;
+     return number;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBe-pCYaEeuLXJhfBEcZlg" name="readLineDouble" specification="_C_uEFCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBe-pSYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String inputString = null;&#xD;
+     double number = -9999;//To keep the compiler happy.&#xD;
+                   //Designed to look like a garbage value.&#xD;
+     boolean done = false;&#xD;
+&#xD;
+     while (! done)&#xD;
+     {&#xD;
+         try&#xD;
+         {&#xD;
+             inputString = readLine( );&#xD;
+             inputString = inputString.trim( );&#xD;
+             number = Double.parseDouble(inputString);&#xD;
+             done = true;&#xD;
+         }&#xD;
+         catch (NumberFormatException e)&#xD;
+         {&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input number is not correct.&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input number must be&quot;);&#xD;
+             System.out.println(&#xD;
+                       &quot;an ordinary number either with&quot;);&#xD;
+             System.out.println(&#xD;
+                        &quot;or without a decimal point,&quot;);&#xD;
+             System.out.println(&quot;such as 42 or 9.99&quot;);&#xD;
+             System.out.println(&quot;Please try again.&quot;);&#xD;
+             System.out.println(&quot;Enter the number:&quot;);&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     return number;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBe-piYaEeuLXJhfBEcZlg" name="readLineFloat" specification="_C_urISYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBe-pyYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String inputString = null;&#xD;
+     float number = -9999;//To keep the compiler happy.&#xD;
+                   //Designed to look like a garbage value.&#xD;
+     boolean done = false;&#xD;
+&#xD;
+     while (! done)&#xD;
+     {&#xD;
+         try&#xD;
+         {&#xD;
+             inputString = readLine( );&#xD;
+             inputString = inputString.trim( );&#xD;
+             number = Float.parseFloat(inputString);&#xD;
+             done = true;&#xD;
+         }&#xD;
+         catch (NumberFormatException e)&#xD;
+         {&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input number is not correct.&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input number must be&quot;);&#xD;
+             System.out.println(&#xD;
+                       &quot;an ordinary number either with&quot;);&#xD;
+             System.out.println(&#xD;
+                       &quot;or without a decimal point,&quot;);&#xD;
+             System.out.println(&quot;such as 42 or 9.99&quot;);&#xD;
+             System.out.println(&quot;Please try again.&quot;);&#xD;
+             System.out.println(&quot;Enter the number:&quot;);&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     return number;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBe-qCYaEeuLXJhfBEcZlg" name="readLineNonwhiteChar" specification="_C_urIyYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBe-qSYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>boolean done = false;&#xD;
+     String inputString = null;&#xD;
+     char nonWhite = ' ';//To keep the compiler happy.&#xD;
+&#xD;
+     while (! done)&#xD;
+     {&#xD;
+         inputString = readLine( );&#xD;
+         inputString = inputString.trim( );&#xD;
+         if (inputString.length( ) == 0)&#xD;
+         {&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input is not correct.&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input must contain at&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;least one nonwhitespace character.&quot;);&#xD;
+             System.out.println(&quot;Please try again.&quot;);&#xD;
+             System.out.println(&quot;Enter input:&quot;);&#xD;
+         }&#xD;
+         else&#xD;
+         {&#xD;
+             nonWhite = (inputString.charAt(0));&#xD;
+             done = true;&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     return nonWhite;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBe-qiYaEeuLXJhfBEcZlg" name="readLineBoolean" specification="_C_urJSYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBe-qyYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>boolean done = false;&#xD;
+     String inputString = null;&#xD;
+     boolean result = false;//To keep the compiler happy.&#xD;
+&#xD;
+     while (! done)&#xD;
+     {&#xD;
+         inputString = readLine( );&#xD;
+         inputString = inputString.trim( );&#xD;
+         if (inputString.equalsIgnoreCase(&quot;true&quot;)&#xD;
+                || inputString.equalsIgnoreCase(&quot;t&quot;))&#xD;
+         {&#xD;
+             result = true;&#xD;
+             done = true;&#xD;
+         }&#xD;
+         else if (inputString.equalsIgnoreCase(&quot;false&quot;)&#xD;
+                     || inputString.equalsIgnoreCase(&quot;f&quot;))&#xD;
+         {&#xD;
+             result = false;&#xD;
+             done = true;&#xD;
+         }&#xD;
+         else&#xD;
+         {&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input is not correct.&quot;);&#xD;
+             System.out.println(&quot;Your input must be&quot;);&#xD;
+             System.out.println(&quot;one of the following:&quot;);&#xD;
+             System.out.println(&quot;the word true,&quot;);&#xD;
+             System.out.println(&quot;the word false,&quot;);&#xD;
+             System.out.println(&quot;the letter T,&quot;);&#xD;
+             System.out.println(&quot;or the letter F.&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;You may use either upper-&quot;);&#xD;
+             System.out.println(&quot;or lowercase letters.&quot;);&#xD;
+             System.out.println(&quot;Please try again.&quot;);&#xD;
+             System.out.println(&quot;Enter input:&quot;);&#xD;
+         }&#xD;
+      }&#xD;
+&#xD;
+     return result;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBe-rCYaEeuLXJhfBEcZlg" name="readChar" specification="_C_vSMSYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBe-rSYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>int charAsInt = -1; //To keep the compiler happy.&#xD;
+     try&#xD;
+     {&#xD;
+         charAsInt = System.in.read( );&#xD;
+     }&#xD;
+     catch(IOException e)&#xD;
+     {&#xD;
+         System.out.println(e.getMessage( ));&#xD;
+         System.out.println(&quot;Fatal error. Ending program.&quot;);&#xD;
+         System.exit(0);&#xD;
+     }&#xD;
+&#xD;
+     return (char)charAsInt;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBe-riYaEeuLXJhfBEcZlg" name="readNonwhiteChar" specification="_C_vSMyYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBe-ryYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>char next;&#xD;
+&#xD;
+   next = readChar( );&#xD;
+   while (Character.isWhitespace(next))&#xD;
+       next = readChar( );&#xD;
+&#xD;
+   return next;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBha4CYaEeuLXJhfBEcZlg" name="readInt" specification="_C_vSNSYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBha4SYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String inputString = null;&#xD;
+     inputString = readWord( );&#xD;
+     return Integer.parseInt(inputString);&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBha4iYaEeuLXJhfBEcZlg" name="readLong" specification="_C_v5QSYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBha4yYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String inputString = null;&#xD;
+     inputString = readWord( );&#xD;
+     return Long.parseLong(inputString);&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBha5CYaEeuLXJhfBEcZlg" name="readDouble" specification="_C_wgUCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBha5SYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String inputString = null;&#xD;
+     inputString = readWord( );&#xD;
+     return Double.parseDouble(inputString);&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBha5iYaEeuLXJhfBEcZlg" name="readFloat" specification="_C_wgUiYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBha5yYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String inputString = null;&#xD;
+     inputString = readWord( );&#xD;
+     return Float.parseFloat(inputString);&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBha6CYaEeuLXJhfBEcZlg" name="readWord" specification="_C_xHYCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBha6SYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String result = &quot;&quot;;&#xD;
+     char next;&#xD;
+&#xD;
+     next = readChar( );&#xD;
+     while (Character.isWhitespace(next))&#xD;
+          next = readChar( );&#xD;
+&#xD;
+     while (!(Character.isWhitespace(next)))&#xD;
+     {&#xD;
+         result = result + next;&#xD;
+         next = readChar( );&#xD;
+     }&#xD;
+&#xD;
+     if (next == '\r')&#xD;
+     {&#xD;
+         next = readChar( );&#xD;
+         if (next != '\n')&#xD;
+         {&#xD;
+             System.out.println(&quot;Fatal error in method &quot;&#xD;
+                  + &quot;readWord of the class SavitchIn.&quot;);&#xD;
+             System.exit(1);&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     return result;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBiB8CYaEeuLXJhfBEcZlg" name="readLineByte" specification="_C_xucCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBiB8SYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String inputString = null;&#xD;
+     byte number = -123;//To keep the compiler happy.&#xD;
+                   //Designed to look like a garbage value.&#xD;
+     boolean done = false;&#xD;
+&#xD;
+     while (! done)&#xD;
+     {&#xD;
+         try&#xD;
+         {&#xD;
+             inputString = readLine( );&#xD;
+             inputString = inputString.trim( );&#xD;
+             number = Byte.parseByte(inputString);&#xD;
+             done = true;&#xD;
+         }&#xD;
+         catch (NumberFormatException e)&#xD;
+         {&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input number is not correct.&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input number must be a&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;whole number in the range&quot;);&#xD;
+             System.out.println(&quot;-128 to 127, written as&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;an ordinary numeral, such as 42.&quot;);&#xD;
+             System.out.println(&quot;Minus signs are OK,&quot;&#xD;
+                            + &quot;but do not use a plus sign.&quot;);&#xD;
+             System.out.println(&quot;Please try again.&quot;);&#xD;
+             System.out.println(&quot;Enter a whole number:&quot;);&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     return number;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBiB8iYaEeuLXJhfBEcZlg" name="readLineShort" specification="_C_xuciYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBiB8yYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String inputString = null;&#xD;
+     short number = -9999;//To keep the compiler happy.&#xD;
+                        //Designed to look like a garbage value.&#xD;
+     boolean done = false;&#xD;
+&#xD;
+     while (! done)&#xD;
+     {&#xD;
+         try&#xD;
+         {&#xD;
+             inputString = readLine( );&#xD;
+             inputString = inputString.trim( );&#xD;
+             number = Short.parseShort(inputString);&#xD;
+             done = true;&#xD;
+         }&#xD;
+         catch (NumberFormatException e)&#xD;
+         {&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input number is not correct.&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;Your input number must be a&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;whole number in the range&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;-32768 to 32767, written as&quot;);&#xD;
+             System.out.println(&#xD;
+                      &quot;an ordinary numeral, such as 42.&quot;);&#xD;
+             System.out.println(&quot;Minus signs are OK,&quot;&#xD;
+                            + &quot;but do not use a plus sign.&quot;);&#xD;
+             System.out.println(&quot;Please try again.&quot;);&#xD;
+             System.out.println(&quot;Enter a whole number:&quot;);&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     return number;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBiB9CYaEeuLXJhfBEcZlg" name="readByte" specification="_C_yVgSYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBiB9SYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String inputString = null;&#xD;
+     inputString = readWord( );&#xD;
+     return Byte.parseByte(inputString);&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBiB9iYaEeuLXJhfBEcZlg" name="readShort" specification="_C_y8kCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBiB9yYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String inputString = null;&#xD;
+     inputString = readWord( );&#xD;
+     return Short.parseShort(inputString);&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBiB-CYaEeuLXJhfBEcZlg" name="read" specification="_C_y8kiYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBiB-SYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>int result = -1; //To keep the compiler happy&#xD;
+     try&#xD;
+     {&#xD;
+         result = System.in.read( );&#xD;
+     }&#xD;
+     catch(IOException e)&#xD;
+     {&#xD;
+         System.out.println(e.getMessage( ));&#xD;
+         System.out.println(&quot;Fatal error. Ending program.&quot;);&#xD;
+         System.exit(0);&#xD;
+     }&#xD;
+     return result;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_C_s18CYaEeuLXJhfBEcZlg" name="readLine" isStatic="true" method="_DBeXmiYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_s18SYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_tdACYaEeuLXJhfBEcZlg" name="readLineWord" isStatic="true" method="_DBeXnCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_tdASYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_uEECYaEeuLXJhfBEcZlg" name="readLineInt" isStatic="true" method="_DBe-oCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_uEESYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_uEEiYaEeuLXJhfBEcZlg" name="readLineLong" isStatic="true" method="_DBe-oiYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_uEEyYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_uEFCYaEeuLXJhfBEcZlg" name="readLineDouble" isStatic="true" method="_DBe-pCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_urICYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_urISYaEeuLXJhfBEcZlg" name="readLineFloat" isStatic="true" method="_DBe-piYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_urIiYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_urIyYaEeuLXJhfBEcZlg" name="readLineNonwhiteChar" isStatic="true" method="_DBe-qCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_urJCYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_urJSYaEeuLXJhfBEcZlg" name="readLineBoolean" isStatic="true" method="_DBe-qiYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_vSMCYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_vSMSYaEeuLXJhfBEcZlg" name="readChar" isStatic="true" method="_DBe-rCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_vSMiYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_vSMyYaEeuLXJhfBEcZlg" name="readNonwhiteChar" isStatic="true" method="_DBe-riYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_vSNCYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_vSNSYaEeuLXJhfBEcZlg" name="readInt" isStatic="true" method="_DBha4CYaEeuLXJhfBEcZlg" raisedException="_DBTYcCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_v5QCYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_v5QSYaEeuLXJhfBEcZlg" name="readLong" isStatic="true" method="_DBha4iYaEeuLXJhfBEcZlg" raisedException="_DBTYcCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_v5QiYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_wgUCYaEeuLXJhfBEcZlg" name="readDouble" isStatic="true" method="_DBha5CYaEeuLXJhfBEcZlg" raisedException="_DBTYcCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_wgUSYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_wgUiYaEeuLXJhfBEcZlg" name="readFloat" isStatic="true" method="_DBha5iYaEeuLXJhfBEcZlg" raisedException="_DBTYcCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_wgUyYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_xHYCYaEeuLXJhfBEcZlg" name="readWord" isStatic="true" method="_DBha6CYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_xHYSYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_xucCYaEeuLXJhfBEcZlg" name="readLineByte" isStatic="true" method="_DBiB8CYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_xucSYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_xuciYaEeuLXJhfBEcZlg" name="readLineShort" isStatic="true" method="_DBiB8iYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_yVgCYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_yVgSYaEeuLXJhfBEcZlg" name="readByte" isStatic="true" method="_DBiB9CYaEeuLXJhfBEcZlg" raisedException="_DBTYcCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_yVgiYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_y8kCYaEeuLXJhfBEcZlg" name="readShort" isStatic="true" method="_DBiB9iYaEeuLXJhfBEcZlg" raisedException="_DBTYcCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_y8kSYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_y8kiYaEeuLXJhfBEcZlg" name="read" isStatic="true" method="_DBiB-CYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_y8kyYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_C_0KsCYaEeuLXJhfBEcZlg" name="Selec_Mul_Pregunta">
+        <generalization xmi:id="_DBQVICYaEeuLXJhfBEcZlg" general="_C_n9cCYaEeuLXJhfBEcZlg"/>
+        <ownedAttribute xmi:id="_DBatMCYaEeuLXJhfBEcZlg" name="array_elecciones" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBatMSYaEeuLXJhfBEcZlg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_DBbUQCYaEeuLXJhfBEcZlg" name="correcta" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_DBbUQiYaEeuLXJhfBEcZlg" name="alternativas" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBbUQyYaEeuLXJhfBEcZlg" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_DBb7UCYaEeuLXJhfBEcZlg" value="{&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;}"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBipACYaEeuLXJhfBEcZlg" name="Selec_Mul_Pregunta" specification="_C_0xwCYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBipASYaEeuLXJhfBEcZlg" name="text">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_DBipAiYaEeuLXJhfBEcZlg" name="array">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBipAyYaEeuLXJhfBEcZlg" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_DBipBCYaEeuLXJhfBEcZlg" name="respuesta_correcta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_DBipBSYaEeuLXJhfBEcZlg" name="peso">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_DBipBiYaEeuLXJhfBEcZlg" type="_C_0KsCYaEeuLXJhfBEcZlg" direction="return"/>
+          <language>java</language>
+          <body>super(text);&#xD;
+		this.array_elecciones = array;&#xD;
+		this.correcta = respuesta_correcta;&#xD;
+		this.setPeso(peso);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBipByYaEeuLXJhfBEcZlg" name="buscar" specification="_C_1_4CYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBipCCYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>int index = 0;&#xD;
+		int i=0;&#xD;
+		System.out.println(getText());&#xD;
+		for(String j:array_elecciones) {	//imprimo alternativas&#xD;
+			System.out.println(j);&#xD;
+		}&#xD;
+		System.out.println(&quot;Ingrese la altenativa que crea usted correcta&quot;);&#xD;
+		String respuestaUsuario = SavitchIn.readLine().toLowerCase();&#xD;
+		for(i=0 ; i&lt;array_elecciones.length ; i++) {&#xD;
+			if(respuestaUsuario.equalsIgnoreCase(alternativas[i])){&#xD;
+				index = i;&#xD;
+			}&#xD;
+		}&#xD;
+			if(array_elecciones[correcta].equalsIgnoreCase(array_elecciones[index])) {&#xD;
+				System.out.println(&quot;Correcta!&quot;);&#xD;
+				return true;&#xD;
+			}&#xD;
+				&#xD;
+			else {&#xD;
+				System.out.println(&quot;InCorrecta!&quot;);&#xD;
+				return false;&#xD;
+			}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_C_0xwCYaEeuLXJhfBEcZlg" name="Selec_Mul_Pregunta" method="_DBipACYaEeuLXJhfBEcZlg">
+          <eAnnotations xmi:id="_C_1Y1CYaEeuLXJhfBEcZlg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_C_1Y1SYaEeuLXJhfBEcZlg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_C_1Y0CYaEeuLXJhfBEcZlg" name="text">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_C_1Y0SYaEeuLXJhfBEcZlg" name="array">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C_1Y1yYaEeuLXJhfBEcZlg" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_C_1Y0iYaEeuLXJhfBEcZlg" name="respuesta_correcta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_C_1Y0yYaEeuLXJhfBEcZlg" name="peso">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_C_1Y1iYaEeuLXJhfBEcZlg" type="_C_0KsCYaEeuLXJhfBEcZlg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_1_4CYaEeuLXJhfBEcZlg" name="buscar" method="_DBipByYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_1_4SYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_C_2m8CYaEeuLXJhfBEcZlg" name="TF_Pregunta">
+        <generalization xmi:id="_DBQVISYaEeuLXJhfBEcZlg" general="_C_n9cCYaEeuLXJhfBEcZlg"/>
+        <ownedAttribute xmi:id="_DBb7UiYaEeuLXJhfBEcZlg" name="Legal" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBipCSYaEeuLXJhfBEcZlg" name="TF_Pregunta" specification="_C_3OACYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBipCiYaEeuLXJhfBEcZlg" name="text">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_DBipCyYaEeuLXJhfBEcZlg" name="respuesta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_DBipDCYaEeuLXJhfBEcZlg" name="peso">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_DBipDSYaEeuLXJhfBEcZlg" type="_C_2m8CYaEeuLXJhfBEcZlg" direction="return"/>
+          <language>java</language>
+          <body>super(text);&#xD;
+		this.Legal = respuesta;&#xD;
+		super.setPeso(peso);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DBipDiYaEeuLXJhfBEcZlg" name="buscar" specification="_C_31FSYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_DBipDyYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>System.out.print(getText() + &quot; (Ingrese T o F): &quot;);&#xD;
+	    // obtener respuesta del usuario y traslada a to lower case&#xD;
+	    String Usuario = SavitchIn.readLine().toLowerCase();&#xD;
+	    if (Usuario.equalsIgnoreCase(&quot;t&quot;)) {&#xD;
+	      if (Legal==true) {&#xD;
+	        System.out.println(&quot; La Respuesta es Correcta! &quot;);&#xD;
+	        return true;&#xD;
+	      }&#xD;
+	      else {&#xD;
+	        System.out.println( &quot; Respuesta Incorrecta! &quot;);&#xD;
+	        return false;&#xD;
+	      } &#xD;
+	    }&#xD;
+	    else &#xD;
+	    	if (Usuario.equalsIgnoreCase(&quot;f&quot;)) {&#xD;
+	    	if (Legal==false) {&#xD;
+	        System.out.println(&quot; La Respuesta es Correcta! &quot;);&#xD;
+		    	return true;&#xD;
+	    	}&#xD;
+	      else {&#xD;
+	        System.out.println(&quot; Respuesta Incorrecta! &quot;);&#xD;
+	        return false;&#xD;
+	      } &#xD;
+	    }&#xD;
+	    else { // respuesta no valida true/false&#xD;
+	      System.out.println(&quot; Respuesta Invalida, Debe ingresar 'T' o 'F' e Intentelo nuevamente. &quot;);&#xD;
+	      return buscar(); // otra vez&#xD;
+	    } 	&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_C_3OACYaEeuLXJhfBEcZlg" name="TF_Pregunta" method="_DBipCSYaEeuLXJhfBEcZlg">
+          <eAnnotations xmi:id="_C_31EiYaEeuLXJhfBEcZlg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_C_31EyYaEeuLXJhfBEcZlg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_C_3OASYaEeuLXJhfBEcZlg" name="text">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_C_31ECYaEeuLXJhfBEcZlg" name="respuesta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_C_31ESYaEeuLXJhfBEcZlg" name="peso">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_C_31FCYaEeuLXJhfBEcZlg" type="_C_2m8CYaEeuLXJhfBEcZlg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_C_31FSYaEeuLXJhfBEcZlg" name="buscar" method="_DBipDiYaEeuLXJhfBEcZlg">
+          <ownedParameter xmi:id="_C_31FiYaEeuLXJhfBEcZlg" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_DBlsUCYaEeuLXJhfBEcZlg" name="" memberEnd="_DBlsUSYaEeuLXJhfBEcZlg _DBV0sCYaEeuLXJhfBEcZlg">
+        <ownedEnd xmi:id="_DBlsUSYaEeuLXJhfBEcZlg" name="" type="_C_h20CYaEeuLXJhfBEcZlg" association="_DBlsUCYaEeuLXJhfBEcZlg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_C_VCgCYaEeuLXJhfBEcZlg" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_C_VCgSYaEeuLXJhfBEcZlg" name="io"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_C_VpkCYaEeuLXJhfBEcZlg" name="util"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_DBRjQCYaEeuLXJhfBEcZlg" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_DBRjQSYaEeuLXJhfBEcZlg" name="Object"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DBTYcCYaEeuLXJhfBEcZlg" name="NumberFormatException"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_C5L-QiYaEeuLXJhfBEcZlg">
+      <eAnnotations xmi:id="_C5MlUCYaEeuLXJhfBEcZlg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_C5MlUSYaEeuLXJhfBEcZlg" base_Package="_CzeX0CYaEeuLXJhfBEcZlg">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_DBSKUCYaEeuLXJhfBEcZlg" base_Element="_DBRjQSYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:Reference xmi:id="_DBT_gCYaEeuLXJhfBEcZlg" base_Element="_DBTYcCYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:Array xmi:id="_DBWbwCYaEeuLXJhfBEcZlg" base_Element="_DBV0sCYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DBXC0CYaEeuLXJhfBEcZlg" base_Element="_DBV0sCYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DBXp4CYaEeuLXJhfBEcZlg" base_Element="_DBXC0SYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DBY4ACYaEeuLXJhfBEcZlg" base_Element="_DBXp4SYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DBZfECYaEeuLXJhfBEcZlg" base_Element="_DBY4ASYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DBaGISYaEeuLXJhfBEcZlg" base_Element="_DBaGICYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:Array xmi:id="_DBatMiYaEeuLXJhfBEcZlg" base_Element="_DBatMCYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DBatMyYaEeuLXJhfBEcZlg" base_Element="_DBatMCYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DBbUQSYaEeuLXJhfBEcZlg" base_Element="_DBbUQCYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:Array xmi:id="_DBbURCYaEeuLXJhfBEcZlg" base_Element="_DBbUQiYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DBb7USYaEeuLXJhfBEcZlg" base_Element="_DBbUQiYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DBciYCYaEeuLXJhfBEcZlg" base_Element="_DBb7UiYaEeuLXJhfBEcZlg"/>
+  <UMLLabProfile:Reference xmi:id="_DBmTYCYaEeuLXJhfBEcZlg" base_Element="_DBlsUCYaEeuLXJhfBEcZlg"/>
+</xmi:XMI>
