@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <title>Aplicaciones de Internet</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href='{% static "css/bootstrap.min.css" %}' type="text/css" />
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+        </script>
+    </head>
+<body>
+    <div class="container">
+        <div class="row">
+            <img src="{% static 'images/userena.svg' %}" class="rounded" style="width:200px"/>
+            <h1>Aplicaciones de Internet</h1>
+            <h3>Movies</h3>
+        </div>
+
+        <form action="">
+            <select name="genres" id="genres" onchange="filtrarPeliculas(this)"></select>
+        </form>
+            
+        <div id="contenedor">
+            <table class="table table-striped" id="table-data">
+                <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Descripción</th>
+                        <th>Portada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    <script>
+        const cargarCursor = async () => {
+            try {
+                const respond = await fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=20e59fa0e07a0ca416d20b5cf6a66ec8&language=es-MX`);
+        
+                console.log(respond);
+                
+                const selectEl = document.getElementById('genres');
+        
+                // Si la respuesta es correcta
+                if (respond.status == 200) {
+                        const datos = await respond.json();
+                        
+                        datos.genres.forEach(movie =>{
+                            const option = document.createElement('option');
+                            option.value = movie.id;
+                            option.textContent = movie.name;
+                            selectEl.appendChild(option)
+                        });
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        cargarCursor();
+
+        const cargarPeliculas = async () => {
+            try {
+                const respond = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=20e59fa0e07a0ca416d20b5cf6a66ec8&language=es-MX`);
+        
+                console.log(respond);
+        
+                // Si la respuesta es correcta
+                if (respond.status == 200) {
+                    const datos = await respond.json();
+        
+                    datos.results.forEach(movie => {
+                        // Obteniendo el título y la URL del póster
+                        const titulo = movie.title;
+                        const descripcion = movie.overview;
+                        const imagen = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
+
+        
+                        // Crear una nueva fila para la tabla
+                        var table = document.getElementById('table-data').getElementsByTagName('tbody')[0];
+                        var fila = table.insertRow(table.rows.length);
+        
+                        // Insertar celdas en la fila
+                        var celdaTitulo = fila.insertCell(0);
+                        var celdaDescripcion = fila.insertCell(1);
+                        var celdaImagen = fila.insertCell(2);
+        
+                        // Agregar contenido a las celdas
+                        celdaTitulo.innerHTML = titulo;
+                        celdaDescripcion.innerHTML = descripcion;
+                        celdaImagen.innerHTML = `<img src="${imagen}" class="poster" style="width: 100px;">`;
+                    });
+        
+                } else if (respond.status === 401) {
+                    console.log('Pusiste la llave mal');
+                } else if (respond.status === 404) {
+                    console.log('La película que buscas no existe');
+                } else {
+                    console.log('Hubo un error y no sabemos qué pasó');
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        cargarPeliculas();
+
+        const filtrarPeliculas = async (select) => {
+            var genresid = select.value;
+            try {
+                const respond = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=20e59fa0e07a0ca416d20b5cf6a66ec8&with_genres=${genresid}&language=es-MX`);
+        
+                console.log(respond);
+        
+                // Si la respuesta es correcta
+                if (respond.status == 200) {
+                    limpiarTabla();
+                    const datos = await respond.json();
+        
+                    datos.results.forEach(movie => {
+                        // Obteniendo el título y la URL del póster
+                        const titulo = movie.title;
+                        const descripcion = movie.overview;
+                        const imagen = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
+
+        
+                        // Crear una nueva fila para la tabla
+                        var table = document.getElementById('table-data').getElementsByTagName('tbody')[0];
+                        var fila = table.insertRow(table.rows.length);
+        
+                        // Insertar celdas en la fila
+                        var celdaTitulo = fila.insertCell(0);
+                        var celdaDescripcion = fila.insertCell(1);
+                        var celdaImagen = fila.insertCell(2);
+        
+                        // Agregar contenido a las celdas
+                        celdaTitulo.innerHTML = titulo;
+                        celdaDescripcion.innerHTML = descripcion;
+                        celdaImagen.innerHTML = `<img src="${imagen}" class="poster" style="width: 100px;">`;
+                    });
+        
+                } else if (respond.status === 401) {
+                    console.log('Pusiste la llave mal');
+                } else if (respond.status === 404) {
+                    console.log('La película que buscas no existe');
+                } else {
+                    console.log('Hubo un error y no sabemos qué pasó');
+                }
+            } catch (error) {
+                console.log(error);
+            }
+
+        }
+        const limpiarTabla = () => {
+            const tableBody = document.getElementById('table-data').getElementsByTagName('tbody')[0];
+            tableBody.innerHTML = ''; // Elimina el contenido de la tabla
+        }
+    
+    </script>
+</body>
+</html>

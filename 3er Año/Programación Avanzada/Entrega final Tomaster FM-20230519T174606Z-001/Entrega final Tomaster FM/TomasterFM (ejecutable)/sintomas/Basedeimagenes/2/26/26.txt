@@ -1,0 +1,11 @@
+Nombre de la Enfermedad:
+Marchitez por Fusarium.
+
+Control Preventivo:
+Los tratamientos culturales que puede aplicar para controlar la marchitéz por fusarium son; Realizar una selección adecuada de la variedad a sembrar, prefiriendo aquellas con resistencia genética a Fusarium. Revisar la calidad de las semillas antes de la siembra para detectar posibles infecciones por Fusarium. Evitar la rotación de cultivos con otros cultivos susceptibles al Fusarium. Realizar un buen manejo de malezas, controlándolas oportunamente para evitar el desarrollo de enfermedades. Utilizar un buen manejo del riego, evitando encharcamientos. Aplicar buenas prácticas de labranza para evitar la compactación del suelo. Aplicar tratamientos preventivos con fungicidas apropiados para el control de Fusarium. Utilizar técnicas de manejo integrado de plagas para controlar los insectos que transportan la enfermedad. Realizar una buena desinfección de los equipos de cosecha.
+
+Control Biologico:
+El control biológico para la marchitez por Fusarium en tomate chile involucra el uso de microorganismos benéficos como Trichoderma spp. para combatir la enfermedad. Esto se logra mediante la competencia por los nutrientes y espacios disponibles en el suelo, la inhibición de la germinación de esporas de Fusarium, la producción de sustancias antifúngicas y la producción de enzimas que degradan las quitinas de las paredes celulares del hongo. Además, se recomienda el uso de sustratos orgánicos como abono, estiércol y compost para promover el crecimiento de estos microorganismos benéficos. Otras estrategias de control biológico para la marchitez por Fusarium en tomate chile incluyen la rotación de cultivos, el uso de variedades resistentes y el uso de cultivos de cobertura.
+
+Control Quimico:
+El control químico para combatir la marchitez causada por el Fusarium en el tomate chile se basa en el uso de los fungicidas triazoles, como el cipermetrina o el propiconazol. Estos productos deben aplicarse al suelo dos veces, una al inicio de la temporada y otra en el momento de la floración. La dosis recomendada es de 1 litro por hectárea para cada aplicación. Además, se recomienda el uso de fungicidas bactericidas, como el cobre o el mancozeb, para prevenir la aparición de la marchitez. Estos productos se deben aplicar al suelo cada 15 días, con una dosis de 0.5 litros por hectárea.
