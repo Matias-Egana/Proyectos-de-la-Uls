@@ -4,14 +4,16 @@ import re
 import os
 import csv
 from datetime import datetime
-import csv
 
 # Configuración de Tesseract
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
 
+# Directorio base donde se encuentra el script
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
 # Directorio para guardar las imágenes y el archivo CSV
-output_dir = 'resultado'
-csv_file = 'patentes.csv'
+output_dir = os.path.join(base_dir, 'resultado')
+csv_file = os.path.join(base_dir, 'patentes.csv')
 
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
@@ -102,11 +104,10 @@ def capturar_imagen():
     return frame, index
 
 def mostrar_contenido_csv():
-    with open('patentes.csv', 'r') as file:
+    with open(csv_file, 'r') as file:
         reader = csv.reader(file)
         for row in reader:
             print(row)
-
 
 # Función principal
 def main():
@@ -119,7 +120,5 @@ def main():
         procesar_imagen(imagen, index)
         mostrar_contenido_csv()
 
-
 if __name__ == "__main__":
     main()
-    
