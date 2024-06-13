@@ -9,7 +9,8 @@ from datetime import datetime
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
 
 # Directorio base donde se encuentra el script
-base_dir = os.path.dirname(os.path.abspath(__file__))
+base_dir = base_dir = os.path.join(os.path.dirname(__file__), '..')
+print(base_dir)
 
 # Directorio para guardar las imágenes y el archivo CSV
 output_dir = os.path.join(base_dir, 'resultado')
@@ -77,6 +78,7 @@ def procesar_imagen(image, index):
     
     # Guardar la imagen procesada en la carpeta 'resultado'
     cv2.imwrite(os.path.join(output_dir, f'Resultado{index}.jpg'), image)
+    print(f"Imagen guardada en: {output_dir}")
 
 # Función para capturar una imagen desde la cámara
 def capturar_imagen():
