@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Compras</title>
+    <script>
+        const servers = ['http://localhost:5000/data', 'http://localhost:5001/data', 'http://localhost:5002/data'];
+
+        document.addEventListener('DOMContentLoaded', function() {
+            fetchData();
+            document.getElementById('addForm').onsubmit = function(event) {
+                event.preventDefault();
+                sendData();
+            };
+        });
+
+        function fetchData() {
+            tryFetch(servers, 'GET')
+                .then(data => updateList(data.items))
+                .catch(error => console.error('Error fetching data:', error));
+        }
+
+        function sendData() {
+            var item = document.getElementById("item").value;
+            var quantity = document.getElementById("quantity").value;
+            var transactionId = Date.now().toString();  // Simple transaction ID based on timestamp
+            tryFetch(servers, 'POST', { transaction_id: transactionId, item: item, quantity: quantity })
+                .then(() => location.reload())
+                .catch(error => {
+                    console.error('Error sending data:', error);
+                    alert("Error al enviar datos: " + error.message);
+                });
+        }
+
+        function removeItem(itemIndex) {
+            var transactionId = Date.now().toString();  // Simple transaction ID for DELETE operation
+            tryFetch(servers, 'DELETE', { transaction_id: transactionId, item_index: itemIndex })
+                .then(() => location.reload())
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert("Error al eliminar datos: " + error.message);
+                });
+        }
+
+        function updateList(items) {
+            const list = document.getElementById('itemList');
+            list.innerHTML = '';
+            items.forEach((item, index) => {
+                const li = document.createElement('li');
+                li.textContent = `${item.item} - Cantidad: ${item.quantity}`;
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Eliminar';
+                deleteButton.onclick = () => removeItem(index);
+                li.appendChild(deleteButton);
+                list.appendChild(li);
+            });
+        }
+
+        function tryFetch(servers, method, body = null) {
+            let attempts = servers.map(url => fetch(url, {
+                method: method,
+                headers: { 'Content-Type': 'application/json' },
+                body: body ? JSON.stringify(body) : null
+            }).then(response => {
+                if (!response.ok) {
+                    return response.json().then(data => Promise.reject(new Error(data.error || 'Unknown error')));
+                }
+                return response.json();
+            }));
+            return Promise.any(attempts);
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulario de Lista de Compras</h1>
+    <form id="addForm">
+        <label for="item">Artículo:</label>
+        <input type="text" id="item" name="item" required>
+        <br><br>
+        <label for="quantity">Cantidad:</label>
+        <input type="number" id="quantity" name="quantity" required>
+        <br><br>
+        <button type="submit">Agregar a la lista</button>
+    </form>
+    <h2>Artículos Agregados</h2>
+    <ul id="itemList"></ul>
+</body>
+</html>
+
