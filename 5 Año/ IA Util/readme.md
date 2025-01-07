@@ -1,4 +1,4 @@
-# Repositorio IA Util - Matías Jesús Egaña Alfaro.
+# Repositorio IA Util.
 
 ### Asignatura dictada por Ingeniero Humberto Farias Aroca.
 
